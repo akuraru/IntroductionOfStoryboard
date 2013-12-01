@@ -12,12 +12,6 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    CGRect frame = [[UIScreen mainScreen] bounds];
-    UINavigationController *navigation = [MainStoryboardEntry navigationController];
-    self.window = [[UIWindow alloc] initWithFrame:frame];
-    _window.rootViewController = navigation;
-    [self.window makeKeyAndVisible];
-    
     return YES;
 }
 							
