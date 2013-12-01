@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class ListViewController;
+@class TodoViewController;
+
 @interface MainStoryboardEntry : NSObject
+
++ (UINavigationController *)navigationController;
++ (ListViewController *)listViewController;
++ (TodoViewController *)todoViewController;
 
 @end
