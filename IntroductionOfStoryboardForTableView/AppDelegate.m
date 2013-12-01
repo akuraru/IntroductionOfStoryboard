@@ -13,9 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     CGRect frame = [[UIScreen mainScreen] bounds];
-    id controller = [MainStoryboardEntry listViewController];
     UINavigationController *navigation = [MainStoryboardEntry navigationController];
-    [navigation pushViewController:controller animated:NO];
     self.window = [[UIWindow alloc] initWithFrame:frame];
     _window.rootViewController = navigation;
     [self.window makeKeyAndVisible];
