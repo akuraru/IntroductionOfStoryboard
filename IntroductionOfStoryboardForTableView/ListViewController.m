@@ -8,6 +8,7 @@
 
 #import "ListViewController.h"
 #import "TodoViewController.h"
+#import "MainStoryboardEntry.h"
 
 @interface ListViewController () <TodoDelegate>
 @end
@@ -81,7 +82,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    TodoViewController *controller = [[TodoViewController alloc] init];
+    TodoViewController *controller = [MainStoryboardEntry todoViewController];
     controller.delegate = self;
     if (indexPath.row < _list.count) {
         controller.todoData = _list[indexPath.row];
