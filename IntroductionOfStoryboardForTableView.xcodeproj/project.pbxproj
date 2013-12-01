@@ -13,14 +13,14 @@
 		BE76B9BD184AC9BD001E749D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9BB184AC9BD001E749D /* InfoPlist.strings */; };
 		BE76B9BF184AC9BD001E749D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9BE184AC9BD001E749D /* main.m */; };
 		BE76B9C3184AC9BD001E749D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9C2184AC9BD001E749D /* AppDelegate.m */; };
-		BE76B9C6184AC9BD001E749D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9C4184AC9BD001E749D /* Main.storyboard */; };
-		BE76B9C9184AC9BD001E749D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9C8184AC9BD001E749D /* ViewController.m */; };
+		BE76B9C9184AC9BD001E749D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9C8184AC9BD001E749D /* ListViewController.m */; };
 		BE76B9CB184AC9BD001E749D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9CA184AC9BD001E749D /* Images.xcassets */; };
 		BE76B9D2184AC9BD001E749D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9D1184AC9BD001E749D /* XCTest.framework */; };
 		BE76B9D3184AC9BD001E749D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B2184AC9BD001E749D /* Foundation.framework */; };
 		BE76B9D4184AC9BD001E749D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE76B9B6184AC9BD001E749D /* UIKit.framework */; };
 		BE76B9DC184AC9BD001E749D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9DA184AC9BD001E749D /* InfoPlist.strings */; };
 		BE76B9DE184AC9BD001E749D /* IntroductionOfStoryboardForTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9DD184AC9BD001E749D /* IntroductionOfStoryboardForTableViewTests.m */; };
+		BE76B9E9184AEC76001E749D /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9E8184AEC76001E749D /* TodoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +44,16 @@
 		BE76B9C0184AC9BD001E749D /* IntroductionOfStoryboardForTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IntroductionOfStoryboardForTableView-Prefix.pch"; sourceTree = "<group>"; };
 		BE76B9C1184AC9BD001E749D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE76B9C2184AC9BD001E749D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE76B9C5184AC9BD001E749D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BE76B9C7184AC9BD001E749D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BE76B9C8184AC9BD001E749D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE76B9C7184AC9BD001E749D /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		BE76B9C8184AC9BD001E749D /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		BE76B9CA184AC9BD001E749D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE76B9D0184AC9BD001E749D /* IntroductionOfStoryboardForTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroductionOfStoryboardForTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE76B9D1184AC9BD001E749D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BE76B9D9184AC9BD001E749D /* IntroductionOfStoryboardForTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IntroductionOfStoryboardForTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		BE76B9DB184AC9BD001E749D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE76B9DD184AC9BD001E749D /* IntroductionOfStoryboardForTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroductionOfStoryboardForTableViewTests.m; sourceTree = "<group>"; };
+		BE76B9E7184AEC76001E749D /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoViewController.h; sourceTree = "<group>"; };
+		BE76B9E8184AEC76001E749D /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +115,12 @@
 			children = (
 				BE76B9C1184AC9BD001E749D /* AppDelegate.h */,
 				BE76B9C2184AC9BD001E749D /* AppDelegate.m */,
-				BE76B9C4184AC9BD001E749D /* Main.storyboard */,
-				BE76B9C7184AC9BD001E749D /* ViewController.h */,
-				BE76B9C8184AC9BD001E749D /* ViewController.m */,
+				BE76B9C7184AC9BD001E749D /* ListViewController.h */,
+				BE76B9C8184AC9BD001E749D /* ListViewController.m */,
 				BE76B9CA184AC9BD001E749D /* Images.xcassets */,
 				BE76B9B9184AC9BD001E749D /* Supporting Files */,
+				BE76B9E7184AEC76001E749D /* TodoViewController.h */,
+				BE76B9E8184AEC76001E749D /* TodoViewController.m */,
 			);
 			path = IntroductionOfStoryboardForTableView;
 			sourceTree = "<group>";
@@ -230,7 +232,6 @@
 			files = (
 				BE76B9CB184AC9BD001E749D /* Images.xcassets in Resources */,
 				BE76B9BD184AC9BD001E749D /* InfoPlist.strings in Resources */,
-				BE76B9C6184AC9BD001E749D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE76B9C9184AC9BD001E749D /* ViewController.m in Sources */,
+				BE76B9E9184AEC76001E749D /* TodoViewController.m in Sources */,
+				BE76B9C9184AC9BD001E749D /* ListViewController.m in Sources */,
 				BE76B9C3184AC9BD001E749D /* AppDelegate.m in Sources */,
 				BE76B9BF184AC9BD001E749D /* main.m in Sources */,
 			);
@@ -280,14 +282,6 @@
 				BE76B9BC184AC9BD001E749D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BE76B9C4184AC9BD001E749D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE76B9C5184AC9BD001E749D /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		BE76B9DA184AC9BD001E749D /* InfoPlist.strings */ = {
@@ -378,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntroductionOfStoryboardForTableView/IntroductionOfStoryboardForTableView-Prefix.pch";
 				INFOPLIST_FILE = "IntroductionOfStoryboardForTableView/IntroductionOfStoryboardForTableView-Info.plist";
@@ -391,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntroductionOfStoryboardForTableView/IntroductionOfStoryboardForTableView-Prefix.pch";
 				INFOPLIST_FILE = "IntroductionOfStoryboardForTableView/IntroductionOfStoryboardForTableView-Info.plist";
@@ -460,6 +456,7 @@
 				BE76B9E3184AC9BD001E749D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE76B9E4184AC9BD001E749D /* Build configuration list for PBXNativeTarget "IntroductionOfStoryboardForTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +465,7 @@
 				BE76B9E6184AC9BD001E749D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
