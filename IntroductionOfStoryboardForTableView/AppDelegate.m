@@ -7,14 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "ListViewController.h"
+#import "MainStoryboardEntry.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     CGRect frame = [[UIScreen mainScreen] bounds];
-    UIViewController *controller = [[ListViewController alloc] init];
-    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:controller];
+    id controller = [MainStoryboardEntry listViewController];
+    UINavigationController *navigation = [MainStoryboardEntry navigationController];
+    [navigation pushViewController:controller animated:NO];
     self.window = [[UIWindow alloc] initWithFrame:frame];
     _window.rootViewController = navigation;
     [self.window makeKeyAndVisible];
