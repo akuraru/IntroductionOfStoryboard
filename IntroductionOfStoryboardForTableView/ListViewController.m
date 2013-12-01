@@ -22,6 +22,19 @@
     
     _list = [NSMutableArray array];
     [_list addObject:@{@"title" : @"DDD" }];
+    
+    [self setup];
+}
+
+- (void)setup {
+    UIBarButtonItem *edit = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(edit:)];
+    self.navigationItem.rightBarButtonItem = edit;
+}
+- (void)edit:(id)sender {
+    [self setEdit:!self.tableView.editing];
+}
+- (void)setEdit:(BOOL)edit {
+    self.tableView.editing = edit;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -30,6 +43,13 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _list.count + 1;
+}
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == _list.count) {
+        return UITableViewCellEditingStyleNone;
+    } else {
+        return UITableViewCellEditingStyleDelete;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -50,6 +70,12 @@
         [cell addSubview:label];
         
         return cell;
+    }
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [_list removeObjectsAtIndexes:[NSIndexSet indexSetWithIndex:indexPath.row]];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
