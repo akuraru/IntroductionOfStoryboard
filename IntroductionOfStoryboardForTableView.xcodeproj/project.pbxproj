@@ -24,6 +24,7 @@
 		BE76B9F2184B1FAC001E749D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9F1184B1FAC001E749D /* Main.storyboard */; };
 		BE76B9F5184B200D001E749D /* MainStoryboardEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9F4184B200D001E749D /* MainStoryboardEntry.m */; };
 		BE76B9FD184B5FE0001E749D /* NewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9FC184B5FE0001E749D /* NewCell.m */; };
+		BE76BA00184B60A8001E749D /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9FF184B60A8001E749D /* TodoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		BE76B9F4184B200D001E749D /* MainStoryboardEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainStoryboardEntry.m; sourceTree = "<group>"; };
 		BE76B9FB184B5FE0001E749D /* NewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCell.h; sourceTree = "<group>"; };
 		BE76B9FC184B5FE0001E749D /* NewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCell.m; sourceTree = "<group>"; };
+		BE76B9FE184B60A8001E749D /* TodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
+		BE76B9FF184B60A8001E749D /* TodoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 		BE76B9FA184B5FE0001E749D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BE76B9FE184B60A8001E749D /* TodoCell.h */,
+				BE76B9FF184B60A8001E749D /* TodoCell.m */,
 				BE76B9FB184B5FE0001E749D /* NewCell.h */,
 				BE76B9FC184B5FE0001E749D /* NewCell.m */,
 			);
@@ -278,6 +283,7 @@
 				BE76B9BF184AC9BD001E749D /* main.m in Sources */,
 				BE76B9FD184B5FE0001E749D /* NewCell.m in Sources */,
 				BE76B9F5184B200D001E749D /* MainStoryboardEntry.m in Sources */,
+				BE76BA00184B60A8001E749D /* TodoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
