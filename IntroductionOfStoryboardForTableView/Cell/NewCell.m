@@ -9,15 +9,4 @@
 #import "NewCell.h"
 
 @implementation NewCell
-
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 320, 44)];
-        label.text = @"new";
-        [self addSubview:label];
-    }
-    return self;
-}
-
 @end
