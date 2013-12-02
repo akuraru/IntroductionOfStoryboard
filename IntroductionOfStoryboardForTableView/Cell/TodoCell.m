@@ -12,8 +12,8 @@
     __weak UILabel *todoTitle;
 }
 
-- (id)init {
-    self = [super initWithFrame:CGRectMake(0, 0, 320, 44)];
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
     if (self) {
         [self setup];
     }

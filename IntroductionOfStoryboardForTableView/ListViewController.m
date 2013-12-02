@@ -57,9 +57,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == _list.count) {
-        return [[NewCell alloc] init];
+        return [tableView dequeueReusableCellWithIdentifier:@"NewCell"];
     } else {
-        TodoCell *cell = [[TodoCell alloc] init];
+        TodoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TodoCell"];
         [cell setTodoData:_list[indexPath.row]];
         return cell;
     }
