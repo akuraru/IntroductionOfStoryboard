@@ -9,6 +9,8 @@
 #import "ListViewController.h"
 #import "TodoViewController.h"
 #import "MainStoryboardEntry.h"
+#import "NewCell.h"
+#import "TodoCell.h"
 
 @interface ListViewController () <TodoDelegate>
 @end
@@ -55,21 +57,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == _list.count) {
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-        
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 320, 44)];
-        label.text = @"new";
-        [cell addSubview:label];
-        
-        return cell;
+        return [tableView dequeueReusableCellWithIdentifier:@"NewCell"];
     } else {
-        NSDictionary *todoData = _list[indexPath.row];
-        UITableViewCell *cell = [[UITableViewCell alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
-        
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 320, 44)];
-        label.text = todoData[@"title"];
-        [cell addSubview:label];
-        
+        TodoCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TodoCell"];
+        [cell setTodoData:_list[indexPath.row]];
         return cell;
     }
 }

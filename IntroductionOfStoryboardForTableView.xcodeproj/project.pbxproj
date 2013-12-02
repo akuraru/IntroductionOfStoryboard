@@ -23,6 +23,8 @@
 		BE76B9E9184AEC76001E749D /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9E8184AEC76001E749D /* TodoViewController.m */; };
 		BE76B9F2184B1FAC001E749D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9F1184B1FAC001E749D /* Main.storyboard */; };
 		BE76B9F5184B200D001E749D /* MainStoryboardEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9F4184B200D001E749D /* MainStoryboardEntry.m */; };
+		BE76B9FD184B5FE0001E749D /* NewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9FC184B5FE0001E749D /* NewCell.m */; };
+		BE76BA00184B60A8001E749D /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9FF184B60A8001E749D /* TodoCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		BE76B9F1184B1FAC001E749D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BE76B9F3184B200D001E749D /* MainStoryboardEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainStoryboardEntry.h; sourceTree = "<group>"; };
 		BE76B9F4184B200D001E749D /* MainStoryboardEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainStoryboardEntry.m; sourceTree = "<group>"; };
+		BE76B9FB184B5FE0001E749D /* NewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCell.h; sourceTree = "<group>"; };
+		BE76B9FC184B5FE0001E749D /* NewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCell.m; sourceTree = "<group>"; };
+		BE76B9FE184B60A8001E749D /* TodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
+		BE76B9FF184B60A8001E749D /* TodoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,7 @@
 		BE76B9B8184AC9BD001E749D /* IntroductionOfStoryboardForTableView */ = {
 			isa = PBXGroup;
 			children = (
+				BE76B9FA184B5FE0001E749D /* Cell */,
 				BE76B9C1184AC9BD001E749D /* AppDelegate.h */,
 				BE76B9C2184AC9BD001E749D /* AppDelegate.m */,
 				BE76B9C7184AC9BD001E749D /* ListViewController.h */,
@@ -160,6 +167,17 @@
 				BE76B9DA184AC9BD001E749D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE76B9FA184B5FE0001E749D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BE76B9FE184B60A8001E749D /* TodoCell.h */,
+				BE76B9FF184B60A8001E749D /* TodoCell.m */,
+				BE76B9FB184B5FE0001E749D /* NewCell.h */,
+				BE76B9FC184B5FE0001E749D /* NewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +281,9 @@
 				BE76B9C9184AC9BD001E749D /* ListViewController.m in Sources */,
 				BE76B9C3184AC9BD001E749D /* AppDelegate.m in Sources */,
 				BE76B9BF184AC9BD001E749D /* main.m in Sources */,
+				BE76B9FD184B5FE0001E749D /* NewCell.m in Sources */,
 				BE76B9F5184B200D001E749D /* MainStoryboardEntry.m in Sources */,
+				BE76BA00184B60A8001E749D /* TodoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
