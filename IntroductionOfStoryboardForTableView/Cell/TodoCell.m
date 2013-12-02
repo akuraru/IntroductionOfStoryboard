@@ -9,20 +9,7 @@
 #import "TodoCell.h"
 
 @implementation TodoCell {
-    __weak UILabel *todoTitle;
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
-- (void)setup {
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 320, 44)];
-    [self addSubview:label];
-    todoTitle = label;
+    __weak IBOutlet UILabel *todoTitle;
 }
 - (void)setTodoData:(NSDictionary *)todoData {
     todoTitle.text = todoData[@"title"];
