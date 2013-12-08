@@ -1,7 +1,7 @@
 IntroductionOfStoryboard
 ========================
 
-ストーリーボードに移行するサンプルアプリ
+ストーリーボードに移行するシナリオサンプルアプリ
 
-現在、説明のブログ等はないのでコミットの変更点を追っていくといいと思います。
-
+[Storyboardに移行するサンプル - 導入編](http://qiita.com/akuraru/items/d0779f1c83df06202e69)
+[Storyboardに移行するサンプル - UITableViewCell編](http://qiita.com/akuraru/items/0da0056dbdb9cf907b06)
