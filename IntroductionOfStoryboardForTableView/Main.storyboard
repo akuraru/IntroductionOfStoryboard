@@ -53,6 +53,9 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="bAL-53-zyg"/>
+                    <connections>
+                        <segue destination="oRy-xV-FaE" kind="push" identifier="Editting" id="gvU-jz-gpa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gK6-Tj-tc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,6 +74,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mtU-v7-Dnh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi2-de-VGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
