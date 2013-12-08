@@ -73,13 +73,20 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    TodoViewController *controller = [MainStoryboardEntry todoViewController];
-    controller.delegate = self;
-    if (indexPath.row < _list.count) {
-        controller.todoData = _list[indexPath.row];
+    [self performSegueWithIdentifier:@"Editting" sender:indexPath];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Editting"]) {
+        TodoViewController *controller = segue.destinationViewController;
+        NSIndexPath *indexPath = sender;
+        
+        controller.delegate = self;
+        if (indexPath.row < _list.count) {
+            controller.todoData = _list[indexPath.row];
+        }
+        controller.index = indexPath.row;
     }
-    controller.index = indexPath.row;
-    [self.navigationController pushViewController:controller animated:YES];
 }
 - (void)insertOrUpdate:(NSDictionary *)dict index:(NSUInteger)index {
     if (index == _list.count) {
