@@ -24,9 +24,6 @@
 }
 
 - (void)setup:(NSDictionary *)todoData {
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
-        self .edgesForExtendedLayout = UIRectEdgeNone;
-    }
     self.view.backgroundColor = [UIColor whiteColor];
     
     UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, 300, 40)];
