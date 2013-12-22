@@ -26,9 +26,6 @@
 - (void)setup:(NSDictionary *)todoData {
     titleField.text = todoData[@"title"];
     detailText.text = todoData[@"detail"];
-    
-    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(save:)];
-    self.navigationItem.rightBarButtonItem = save;
 }
 
 - (IBAction)save:(id)sender {

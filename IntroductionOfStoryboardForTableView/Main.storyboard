@@ -92,7 +92,11 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="mtU-v7-Dnh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="H0X-eg-hNn"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="H0X-eg-hNn">
+                            <connections>
+                                <action selector="save:" destination="oRy-xV-FaE" id="swu-n5-lhw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailText" destination="O2O-mh-O3t" id="NIs-FO-pjd"/>
