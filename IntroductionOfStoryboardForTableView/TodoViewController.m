@@ -30,16 +30,16 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, 300, 40)];
-    field.text = todoData[@"title"];
-    field.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:field];
     titleField = field;
+    titleField.text = todoData[@"title"];
+    titleField.backgroundColor = [UIColor lightGrayColor];
     
     UITextView *detail = [[UITextView alloc] initWithFrame:CGRectMake(10, 60, 300, 100)];
-    detail.text = todoData[@"detail"];
-    detail.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:detail];
     detailText = detail;
+    detailText.text = todoData[@"detail"];
+    detailText.backgroundColor = [UIColor lightGrayColor];
     
     UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(save:)];
     self.navigationItem.rightBarButtonItem = save;
