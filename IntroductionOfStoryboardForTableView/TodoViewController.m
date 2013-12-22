@@ -26,13 +26,6 @@
 - (void)setup:(NSDictionary *)todoData {
     self.view.backgroundColor = [UIColor whiteColor];
     
-    UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, 300, 40)];
-    [self.view addSubview:field];
-    titleField = field;
-    UITextView *detail = [[UITextView alloc] initWithFrame:CGRectMake(10, 60, 300, 100)];
-    [self.view addSubview:detail];
-    detailText = detail;
-    
     titleField.text = todoData[@"title"];
     titleField.backgroundColor = [UIColor lightGrayColor];
     detailText.text = todoData[@"detail"];

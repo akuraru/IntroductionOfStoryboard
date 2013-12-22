@@ -91,6 +91,10 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="mtU-v7-Dnh"/>
+                    <connections>
+                        <outlet property="detailText" destination="O2O-mh-O3t" id="NIs-FO-pjd"/>
+                        <outlet property="titleField" destination="iAD-qY-Met" id="G87-xQ-hMQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wi2-de-VGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
