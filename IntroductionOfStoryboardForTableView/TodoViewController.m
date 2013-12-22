@@ -32,12 +32,12 @@
     UITextField *field = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, 300, 40)];
     [self.view addSubview:field];
     titleField = field;
-    titleField.text = todoData[@"title"];
-    titleField.backgroundColor = [UIColor lightGrayColor];
-    
     UITextView *detail = [[UITextView alloc] initWithFrame:CGRectMake(10, 60, 300, 100)];
     [self.view addSubview:detail];
     detailText = detail;
+    
+    titleField.text = todoData[@"title"];
+    titleField.backgroundColor = [UIColor lightGrayColor];
     detailText.text = todoData[@"detail"];
     detailText.backgroundColor = [UIColor lightGrayColor];
     
