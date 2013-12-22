@@ -31,7 +31,7 @@
     self.navigationItem.rightBarButtonItem = save;
 }
 
-- (void)save:(id)sender {
+- (IBAction)save:(id)sender {
     if ([_delegate respondsToSelector:@selector(insertOrUpdate:index:)]) {
         [_delegate insertOrUpdate:@{
             @"title" : (titleField.text) ?: @"",
