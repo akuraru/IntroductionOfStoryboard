@@ -13,8 +13,8 @@
 @end
 
 @implementation TodoViewController {
-    __weak UITextField *titleField;
-    __weak UITextView *detailText;
+    IBOutlet __weak UITextField *titleField;
+    IBOutlet __weak UITextView *detailText;
 }
 
 - (void)viewDidLoad {
