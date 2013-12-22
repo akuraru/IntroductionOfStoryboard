@@ -24,8 +24,6 @@
 }
 
 - (void)setup:(NSDictionary *)todoData {
-    self.view.backgroundColor = [UIColor whiteColor];
-    
     titleField.text = todoData[@"title"];
     detailText.text = todoData[@"detail"];
     
