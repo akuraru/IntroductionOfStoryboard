@@ -27,9 +27,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     titleField.text = todoData[@"title"];
-    titleField.backgroundColor = [UIColor lightGrayColor];
     detailText.text = todoData[@"detail"];
-    detailText.backgroundColor = [UIColor lightGrayColor];
     
     UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(save:)];
     self.navigationItem.rightBarButtonItem = save;
