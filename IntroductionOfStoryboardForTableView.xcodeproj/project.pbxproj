@@ -22,7 +22,6 @@
 		BE76B9DE184AC9BD001E749D /* IntroductionOfStoryboardForTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9DD184AC9BD001E749D /* IntroductionOfStoryboardForTableViewTests.m */; };
 		BE76B9E9184AEC76001E749D /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9E8184AEC76001E749D /* TodoViewController.m */; };
 		BE76B9F2184B1FAC001E749D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE76B9F1184B1FAC001E749D /* Main.storyboard */; };
-		BE76B9F5184B200D001E749D /* MainStoryboardEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9F4184B200D001E749D /* MainStoryboardEntry.m */; };
 		BE76B9FD184B5FE0001E749D /* NewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9FC184B5FE0001E749D /* NewCell.m */; };
 		BE76BA00184B60A8001E749D /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76B9FF184B60A8001E749D /* TodoCell.m */; };
 /* End PBXBuildFile section */
@@ -59,8 +58,6 @@
 		BE76B9E7184AEC76001E749D /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoViewController.h; sourceTree = "<group>"; };
 		BE76B9E8184AEC76001E749D /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoViewController.m; sourceTree = "<group>"; };
 		BE76B9F1184B1FAC001E749D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		BE76B9F3184B200D001E749D /* MainStoryboardEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainStoryboardEntry.h; sourceTree = "<group>"; };
-		BE76B9F4184B200D001E749D /* MainStoryboardEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainStoryboardEntry.m; sourceTree = "<group>"; };
 		BE76B9FB184B5FE0001E749D /* NewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCell.h; sourceTree = "<group>"; };
 		BE76B9FC184B5FE0001E749D /* NewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCell.m; sourceTree = "<group>"; };
 		BE76B9FE184B60A8001E749D /* TodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
@@ -134,8 +131,6 @@
 				BE76B9E7184AEC76001E749D /* TodoViewController.h */,
 				BE76B9E8184AEC76001E749D /* TodoViewController.m */,
 				BE76B9F1184B1FAC001E749D /* Main.storyboard */,
-				BE76B9F3184B200D001E749D /* MainStoryboardEntry.h */,
-				BE76B9F4184B200D001E749D /* MainStoryboardEntry.m */,
 			);
 			path = IntroductionOfStoryboardForTableView;
 			sourceTree = "<group>";
@@ -282,7 +277,6 @@
 				BE76B9C3184AC9BD001E749D /* AppDelegate.m in Sources */,
 				BE76B9BF184AC9BD001E749D /* main.m in Sources */,
 				BE76B9FD184B5FE0001E749D /* NewCell.m in Sources */,
-				BE76B9F5184B200D001E749D /* MainStoryboardEntry.m in Sources */,
 				BE76BA00184B60A8001E749D /* TodoCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

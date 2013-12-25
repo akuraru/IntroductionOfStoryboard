@@ -8,11 +8,10 @@
 
 #import "ListViewController.h"
 #import "TodoViewController.h"
-#import "MainStoryboardEntry.h"
 #import "NewCell.h"
 #import "TodoCell.h"
 
-@interface ListViewController () <TodoDelegate>
+@interface ListViewController ()
 @end
 
 @implementation ListViewController {
@@ -81,7 +80,6 @@
         TodoViewController *controller = segue.destinationViewController;
         NSIndexPath *indexPath = sender;
         
-        controller.delegate = self;
         if (indexPath.row < _list.count) {
             controller.todoData = _list[indexPath.row];
         }
