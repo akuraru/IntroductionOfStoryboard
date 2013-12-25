@@ -7,6 +7,7 @@
 //
 
 #import "TodoViewController.h"
+#import "ListViewController.h"
 
 @interface TodoViewController ()
 
@@ -29,12 +30,17 @@
 }
 
 - (IBAction)save:(id)sender {
-    if ([_delegate respondsToSelector:@selector(insertOrUpdate:index:)]) {
-        [_delegate insertOrUpdate:@{
-            @"title" : (titleField.text) ?: @"",
-            @"detail" : (detailText.text) ?: @"",
-        } index:_index];
+    [self performSegueWithIdentifier:@"Back" sender:@{
+        @"title" : (titleField.text) ?: @"",
+        @"detail" : (detailText.text) ?: @"",
+        @"index" : @(_index),
+    }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Back"]) {
+        ListViewController *controller = segue.destinationViewController;
+        [controller insertOrUpdate:sender];
     }
-    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

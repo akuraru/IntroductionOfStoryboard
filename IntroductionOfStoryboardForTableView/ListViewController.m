@@ -8,11 +8,10 @@
 
 #import "ListViewController.h"
 #import "TodoViewController.h"
-#import "MainStoryboardEntry.h"
 #import "NewCell.h"
 #import "TodoCell.h"
 
-@interface ListViewController () <TodoDelegate>
+@interface ListViewController ()
 @end
 
 @implementation ListViewController {
@@ -81,14 +80,14 @@
         TodoViewController *controller = segue.destinationViewController;
         NSIndexPath *indexPath = sender;
         
-        controller.delegate = self;
         if (indexPath.row < _list.count) {
             controller.todoData = _list[indexPath.row];
         }
         controller.index = indexPath.row;
     }
 }
-- (void)insertOrUpdate:(NSDictionary *)dict index:(NSUInteger)index {
+- (void)insertOrUpdate:(NSDictionary *)dict {
+    NSInteger index = [dict[@"index"] integerValue];
     if (index == _list.count) {
         [_list addObject:dict];
     } else {
@@ -96,4 +95,6 @@
     }
 }
 
+- (IBAction)back:(UIStoryboardSegue *)segue {
+}
 @end
