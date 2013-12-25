@@ -7,6 +7,7 @@
 //
 
 #import "TodoViewController.h"
+#import "ListViewController.h"
 
 @interface TodoViewController ()
 
@@ -34,5 +35,12 @@
         @"detail" : (detailText.text) ?: @"",
         @"index" : @(_index),
     }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Back"]) {
+        ListViewController *controller = segue.destinationViewController;
+        [controller insertOrUpdate:sender];
+    }
 }
 @end
