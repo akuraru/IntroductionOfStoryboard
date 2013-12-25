@@ -29,13 +29,10 @@
 }
 
 - (IBAction)save:(id)sender {
-    if ([_delegate respondsToSelector:@selector(insertOrUpdate:)]) {
-        [_delegate insertOrUpdate:@{
-            @"title" : (titleField.text) ?: @"",
-            @"detail" : (detailText.text) ?: @"",
-            @"index" : @(_index),
-        }];
-    }
-    [self.navigationController popViewControllerAnimated:YES];
+    [self performSegueWithIdentifier:@"Back" sender:@{
+        @"title" : (titleField.text) ?: @"",
+        @"detail" : (detailText.text) ?: @"",
+        @"index" : @(_index),
+    }];
 }
 @end
