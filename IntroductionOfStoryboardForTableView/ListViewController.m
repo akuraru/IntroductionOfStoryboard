@@ -88,7 +88,8 @@
         controller.index = indexPath.row;
     }
 }
-- (void)insertOrUpdate:(NSDictionary *)dict index:(NSUInteger)index {
+- (void)insertOrUpdate:(NSDictionary *)dict {
+    NSInteger index = [dict[@"index"] integerValue];
     if (index == _list.count) {
         [_list addObject:dict];
     } else {

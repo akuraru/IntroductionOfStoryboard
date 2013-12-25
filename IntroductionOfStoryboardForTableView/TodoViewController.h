@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @protocol TodoDelegate <NSObject>
-- (void)insertOrUpdate:(NSDictionary *)dict index:(NSUInteger)index;
+- (void)insertOrUpdate:(NSDictionary *)dict;
 @end
 
 @interface TodoViewController : UIViewController
